@@ -45,7 +45,7 @@ turtle 예제에선
 
 
 
-<img src="/Users/chulheelee/Documents/kookmin/4-1/capstone/assets/image-20210317004454253.png" alt="image-20210317004454253" style="zoom:30%;" />
+<img src="./assets/image-20210317004454253.png" alt="image-20210317004454253" style="zoom:30%;" />
 
 토픽방식에서는 접속을 끊지 않는 이상 지속적으로 메시지를 전송할 수 있습니다. (연속성)
 
