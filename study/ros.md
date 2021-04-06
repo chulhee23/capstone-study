@@ -67,7 +67,6 @@ turtle 예제에선
 
   - 사용자 패키지 폴더
     
-    
   - /include
     - 헤더파일
   - /launch
@@ -85,12 +84,12 @@ turtle 예제에선
     - <img src="./assets/cmake_list.png" alt="image-20210317005257835" style="zoom:20%;" />
     - <img src="./assets/cmake_list2.png" alt="image-20210317005517763" style="zoom:20%;" />
     - <img src="./assets/cmake_list3.png" alt="image-20210317005630133" style="zoom:20%;" />
-
   
 
   
 
-  - package.xml
+  
+- package.xml
     - 패키지 설정 파일
     - ![image-20210317005224359](./assets/package_xml.png)
 
@@ -142,9 +141,15 @@ include_directories(
 )
 
 # 노드의 이름을 추가한다
+# CMake 빌드 스크립트에서 빌드 대상 바이너리 정의 구문(ADD_EXECUTABLE)에 들어가는 내용은 
+# 출력 바이너리 이름과 소스 파일 목록이 전부입니다. 
 add_executable(capstone_practice src/msg.cpp)
-target_link_libraries(msg ${catkin_LIBRARIES})
+target_link_libraries(capstone_practice ${catkin_LIBRARIES})
 ```
+
+이 파일에 대한 설정에 대한 자세한 내용은 (https://www.tuwlab.com/ece/27234) 참고 바랍니다.
+
+
 
 
 
@@ -185,16 +190,8 @@ int main(int argc, char** argv)
 }
 ```
 
-
-
-질문!
-
-1. 한글 쓰고 싶음...
-2. spinOnce ???
-
-
-
-
+- **spinOnce() vs spin()**
+  - https://gnaseel.tistory.com/31
 
 
 
